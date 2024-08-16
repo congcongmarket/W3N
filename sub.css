@@ -1,0 +1,305 @@
+body {
+    font-family: Inter, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #000;
+}
+
+a {
+    color: rgba(0, 0, 0, 0.30);
+    font-family: Inter, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+    transition-duration: 0.5s;
+}
+
+.container {
+    padding:40px 20px 0 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.left-block {
+    width: 692px;
+    max-width: 692px;
+    min-width: 692px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.header-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width:100%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.header-title {
+    background-color: #000;
+    color: #fff;
+    width: 534px;
+    height: 78px;
+    padding: 10px;
+}
+
+.header-title h1 {
+    color: #FFF;
+    font-family: Inter, sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 0;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+
+.header-link img {
+    width: 47px; /* 可根据实际图片大小调整 */
+    height: 34px;
+}
+
+h2 {
+    font-size: 36px;
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    margin: 20px 0 10px;
+}
+
+#credits {
+    font-family: Inter, sans-serif;
+    color: rgba(0, 0, 0, 0.60);
+    text-align: right;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 166.667% */
+}
+
+.title2 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title2 p{
+    display: inline;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 0;
+    text-transform: uppercase;
+    }
+
+.main p{
+    color: #000;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer p{
+    color: #000;
+    background-color: #FFFFFF;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 125% */
+    text-align: left;
+    position: fixed;
+    bottom:0;
+}
+
+.project-list {
+    list-style: none;
+    padding: 0;
+    margin: 36px 0;
+}
+
+.project-list li {
+    color: rgba(0, 0, 0, 0.30);
+    font-family: Inter, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-top: 18px;
+}
+
+.right-block {
+    /*margin-top: 26px;*/
+    width: 1165px;
+    height: 100vh; /* 视窗高度减去40px */
+    overflow-y: scroll; /* 添加垂直滚动条 */
+    scrollbar-width: none;  /* 对于Firefox，隐藏滚动条 */
+    -ms-overflow-style: none;  /* 对于IE和Edge，隐藏滚动条 */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    scroll-behavior: smooth; /* 平滑滚动效果 */
+    box-sizing: border-box;
+}
+
+.right-block::-webkit-scrollbar {
+    display: none; /* 对于Chrome、Safari和Opera，隐藏滚动条 */
+}
+
+.image-container {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.video-c {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.video-c video {
+    width: 100%;
+    height: auto;
+    object-fit: fill;
+}
+
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+
+@media (max-width: 1280px) {
+
+    .left-block {
+        width: 450px;
+        min-width: 450px;
+        max-width: 450px;
+        height: auto;
+    }
+
+    .header-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 25px;
+    }
+
+    .header-title {
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
+
+    .header-title h1 {
+        font-size: 40px;
+    }
+
+    .right-block {
+        height: calc(100vh + 500px); /* 视窗高度减去40px */
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+    .title2 p {
+        font-size: 24px;
+    }
+
+    .main p {
+        font-size: 18px;
+    }
+
+    #credits {
+        font-size: 12px;
+    }
+
+    .project-list li{
+        font-size: 24px;
+    }
+
+    .footer p{
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width: 744px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left-block {
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+
+    }
+
+    .footer p {
+        display: none;
+    }
+
+    .project-list li {
+        display: none;
+    }
+
+    .right-block {
+        width: 100%;
+        height: auto; /* 视窗高度减去40px */
+        overflow-y: visible; /* 添加垂直滚动条 */
+    }
+
+    .title2 {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+}
+    @media (max-width: 376px) {
+        .header-title h1 {
+            font-size: 30px;
+        }
+
+        .title2 {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+}
