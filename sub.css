@@ -291,7 +291,7 @@ h2 {
         justify-content: flex-start;
     }
 }
-    @media (max-width: 376px) {
+    @media (max-width: 500px) {
         .header-title h1 {
             font-size: 30px;
         }
@@ -302,4 +302,11 @@ h2 {
             align-items: flex-start;
             justify-content: flex-start;
         }
+}
+
+    @media (max-width: 365px) {
+        .header-title h1 {
+            font-size: 20px;
+        }
+
 }
